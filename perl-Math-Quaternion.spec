@@ -20,8 +20,6 @@ BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_noautoreq	"perl(anything_fake_or_conditional)"
-
 %description
 This package lets you create and manipulate quaternions. A
 quaternion is a mathematical object developed as a kind of
