@@ -1,6 +1,6 @@
 #
 # Conditional build:
-# _without_tests - do not perform "make test"
+%bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Math
@@ -16,7 +16,7 @@ Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version
 # Source0-md5:	afb5a960eb511d572a323608c42d7b11
 BuildRequires:	perl-devel >= 5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
-%{!?_without_tests:BuildRequires:	perl-Test-Simple}
+%{?with_tests:BuildRequires:	perl-Test-Simple}
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -40,10 +40,9 @@ obrotów w przestrzeni trójwymiarowej.
 %build
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
-
 %{__make}
 
-%{!?_without_tests:%{__make} test}
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
