@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Math
-%define	pnam	Quaternion
+%define		pdir	Math
+%define		pnam	Quaternion
 Summary:	Math::Quaternion - Perl class to represent quaternions
 Summary(pl):	Math::Quaternion - klasa Perla do reprezentowania kwaternionów
 Name:		perl-Math-Quaternion
