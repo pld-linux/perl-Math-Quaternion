@@ -6,7 +6,7 @@
 %define		pdir	Math
 %define		pnam	Quaternion
 Summary:	Math::Quaternion - Perl class to represent quaternions
-Summary(pl):	Math::Quaternion - klasa Perla do reprezentowania kwaternion體
+Summary(pl.UTF-8):   Math::Quaternion - klasa Perla do reprezentowania kwaternion贸w
 Name:		perl-Math-Quaternion
 Version:	0.02
 Release:	1
@@ -28,12 +28,12 @@ generalization of complex numbers, usually represented by an array
 of four real numbers, and is often used to represent rotations in
 three-dimensional space.
 
-%description -l pl
-Ten pakiet pozwala na tworzenie oraz wykorzystywanie kwaternion體 w
-obliczeniach. Kwaternion to obiekt matematyczny wymy秎ony jako rodzaj
-uog髄nienia liczb zespolonych, zazwyczaj reprezentowany jako tablica
-czterech liczb rzeczywistych, cz阺to u縴wany do reprezentowania
-obrot體 w przestrzeni tr骿wymiarowej.
+%description -l pl.UTF-8
+Ten pakiet pozwala na tworzenie oraz wykorzystywanie kwaternion贸w w
+obliczeniach. Kwaternion to obiekt matematyczny wymy艣lony jako rodzaj
+uog贸lnienia liczb zespolonych, zazwyczaj reprezentowany jako tablica
+czterech liczb rzeczywistych, cz臋sto u偶ywany do reprezentowania
+obrot贸w w przestrzeni tr贸jwymiarowej.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
