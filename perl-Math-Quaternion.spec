@@ -6,7 +6,7 @@
 %define		pdir	Math
 %define		pnam	Quaternion
 Summary:	Math::Quaternion - Perl class to represent quaternions
-Summary(pl.UTF-8):   Math::Quaternion - klasa Perla do reprezentowania kwaternionów
+Summary(pl.UTF-8):	Math::Quaternion - klasa Perla do reprezentowania kwaternionów
 Name:		perl-Math-Quaternion
 Version:	0.02
 Release:	1
