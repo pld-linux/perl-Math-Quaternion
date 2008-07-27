@@ -9,7 +9,7 @@ Summary:	Math::Quaternion - Perl class to represent quaternions
 Summary(pl.UTF-8):	Math::Quaternion - klasa Perla do reprezentowania kwaternionów
 Name:		perl-Math-Quaternion
 Version:	0.02
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
