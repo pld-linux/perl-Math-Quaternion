@@ -8,13 +8,13 @@
 Summary:	Math::Quaternion - Perl class to represent quaternions
 Summary(pl.UTF-8):	Math::Quaternion - klasa Perla do reprezentowania kwaternionów
 Name:		perl-Math-Quaternion
-Version:	0.02
-Release:	2
+Version:	0.03
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	cf608eb63b91bdf8bd1c148c9888638b
+# Source0-md5:	818e88923c99053f26317acd4c61adfd
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %{?with_tests:BuildRequires:	perl-Test-Simple}
