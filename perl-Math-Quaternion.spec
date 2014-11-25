@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Math
 %define		pnam	Quaternion
+%include	/usr/lib/rpm/macros.perl
 Summary:	Math::Quaternion - Perl class to represent quaternions
 Summary(pl.UTF-8):	Math::Quaternion - klasa Perla do reprezentowania kwaternionów
 Name:		perl-Math-Quaternion
@@ -15,18 +15,18 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	818e88923c99053f26317acd4c61adfd
+URL:		http://search.cpan.org/dist/Math-Quaternion/
+%{?with_tests:BuildRequires:	perl-Test-Simple}
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
-%{?with_tests:BuildRequires:	perl-Test-Simple}
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-This package lets you create and manipulate quaternions. A
-quaternion is a mathematical object developed as a kind of
-generalization of complex numbers, usually represented by an array
-of four real numbers, and is often used to represent rotations in
-three-dimensional space.
+This package lets you create and manipulate quaternions. A quaternion
+is a mathematical object developed as a kind of generalization of
+complex numbers, usually represented by an array of four real numbers,
+and is often used to represent rotations in three-dimensional space.
 
 %description -l pl.UTF-8
 Ten pakiet pozwala na tworzenie oraz wykorzystywanie kwaternionów w
