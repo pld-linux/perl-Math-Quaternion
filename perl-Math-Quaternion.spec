@@ -4,7 +4,6 @@
 
 %define		pdir	Math
 %define		pnam	Quaternion
-%include	/usr/lib/rpm/macros.perl
 Summary:	Math::Quaternion - Perl class to represent quaternions
 Summary(pl.UTF-8):	Math::Quaternion - klasa Perla do reprezentowania kwaternionów
 Name:		perl-Math-Quaternion
